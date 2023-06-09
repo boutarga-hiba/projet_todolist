@@ -10,6 +10,8 @@ let selection2 = document.querySelector(".selection-trillo");
 // * log 
 console.log(contenu_input2,send_boites,contenu_para2);
 
+// * tableau 
+let tab_todo = [];
 //* btn modifier supprimer
 btn_modifier=document.querySelector(".update2");
 btn_supprimer=document.querySelectorAll(".delete2");
@@ -45,6 +47,7 @@ for (let i = 0; i < send_boites.length; i++) {
             </div> `;
             contenu_para2.appendChild(para2);
             contenu_input2.value="";
+            tab_todo.push(contenu_para2);
 
         }
     }
@@ -84,9 +87,30 @@ contenu_para2.addEventListener("click",(element_modifier)=>
 
 
 function filterTodos(e) {
+
+    let todos = contenu_para2.children;
+    console.log(todos);
+
+    for (let k = 0; k < todos.length; k++) {
+        let element = todos[k];
+
+
+        switch (e.target.value) {
+            case "todo":
+              console.log(element);
+              element.style.display = "flex";
+
+              let x = document.createElement("div");
+              x.classList.add("item-2");
+              x.innerHTML="``"
+              break;
+        }
+        
+    }
 }
 
 
+selection2.addEventListener("change",filterTodos)
 
 
 
