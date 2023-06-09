@@ -1,8 +1,6 @@
 #Mini-projet : To do list 
 ## 1- 
     Il faut un input et un bouton au milieu en haut, au clique sur le bouton , la valeur qu'il y a dans l'input se mets dans une boite (div centrer);
-
-
     
     Pour chaque élément envoyer , il y a 3 icones : 
         - Une qui permets de changer la couleur de l'élement en vert pour faire comprendre que sa a été fait
