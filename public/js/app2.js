@@ -2,7 +2,11 @@
 let contenu_input2 = document.querySelector(".contenu_input2");
 let send_boites = document.querySelectorAll(".send_boites");
 let contenu_para2=document.querySelector(".todo");
+let contenu_para3=document.querySelector(".doing");
+
 let paragraphe = document.querySelector(".para2")
+
+let selection2 = document.querySelector(".selection-trillo");
 // * log 
 console.log(contenu_input2,send_boites,contenu_para2);
 
@@ -75,3 +79,15 @@ contenu_para2.addEventListener("click",(element_modifier)=>
         }
     }
 });
+
+// * selection 
+
+
+function filterTodos(e) {
+}
+
+
+
+
+
+
